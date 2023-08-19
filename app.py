@@ -122,6 +122,10 @@ def processSpaces(data_ibs, team):
     
     return processedTeam
 
+@app.route("/greet", methods=['GET'])
+def greet():
+    return "hi"
+
 @app.route("/recommend", methods=['GET'])
 def getRecommendation():
     team = request.args.get("team")
